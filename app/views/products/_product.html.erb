@@ -1,0 +1,30 @@
+<tr id="<%= dom_id product %>" class="product">
+  <td><%= product.id %></td>
+  <td>
+    <%= product.name %>
+  </td>
+
+  <td>
+    <%= product.sku %>
+  </td>
+
+  <td>
+    <%= product.description %>
+  </td>
+
+  <td>
+    <%= product.price.format %>
+  </td>
+
+  <td>
+    <%= product.tax.format %>
+  </td>
+
+  <td>
+    <%= product.stock %>
+  </td>
+  <td>
+    <%= link_to "Edit", edit_product_path(id: product.to_param) %>
+    <%= button_to "Delete", product_url(id: product.id), method: :delete %>
+  </td>
+</tr>

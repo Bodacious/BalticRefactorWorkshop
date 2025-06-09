@@ -1,0 +1,21 @@
+<%= render 'shared/flash', flash: flash %>
+
+<% content_for :title, "Products" %>
+
+<h1>Products</h1>
+
+<%= link_to "New product", new_product_path %>
+
+<table id="products">
+  <tr>
+    <th>#</th>
+    <th>Name</th>
+    <th>SKU</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Tax</th>
+    <th>Stock</th>
+    <th></th>
+  </tr>
+  <%= render @products %>
+</table>
