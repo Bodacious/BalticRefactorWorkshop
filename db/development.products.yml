@@ -9,6 +9,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 3-product:
   id: 3
   sku: ACME-X003
@@ -19,6 +21,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 4-product:
   id: 4
   sku: ACME-X004
@@ -29,6 +33,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 5-product:
   id: 5
   sku: ACME-X005
@@ -39,6 +45,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 6-product:
   id: 6
   sku: ACME-X006
@@ -49,6 +57,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 7-product:
   id: 7
   sku: ACME-X007
@@ -59,6 +69,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 8-product:
   id: 8
   sku: ACME-X008
@@ -69,6 +81,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 9-product:
   id: 9
   sku: ACME-X009
@@ -79,16 +93,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
-15-product:
-  id: 15
-  sku: ACME-X015
-  name: Product 15
-  description: Description for product 15
-  price_amount: 9.99
-  price_currency: USD
-  tax_amount: 1.99
-  tax_currency: USD
-  stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 16-product:
   id: 16
   sku: ACME-X016
@@ -99,9 +105,11 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:20:52 +0200'
 17-product:
   id: 17
-  sku: ACME-X017
+  sku: ACME-X117
   name: Product 17
   description: Description for product 17
   price_amount: 9.99
@@ -109,6 +117,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:20:30 +0200'
 18-product:
   id: 18
   sku: ACME-X018
@@ -119,6 +129,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 19-product:
   id: 19
   sku: ACME-X019
@@ -129,6 +141,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 20-product:
   id: 20
   sku: ACME-X020
@@ -139,6 +153,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 21-product:
   id: 21
   sku: ACME-X021
@@ -149,6 +165,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 22-product:
   id: 22
   sku: ACME-X022
@@ -159,6 +177,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 23-product:
   id: 23
   sku: ACME-X023
@@ -169,6 +189,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 24-product:
   id: 24
   sku: ACME-X024
@@ -179,6 +201,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 25-product:
   id: 25
   sku: ACME-X025
@@ -189,6 +213,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 26-product:
   id: 26
   sku: ACME-X026
@@ -199,6 +225,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 27-product:
   id: 27
   sku: ACME-X027
@@ -209,6 +237,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 28-product:
   id: 28
   sku: ACME-X028
@@ -219,6 +249,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 29-product:
   id: 29
   sku: ACME-X029
@@ -229,6 +261,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 30-product:
   id: 30
   sku: ACME-X030
@@ -239,6 +273,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 31-product:
   id: 31
   sku: ACME-X031
@@ -249,6 +285,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 32-product:
   id: 32
   sku: ACME-X032
@@ -259,6 +297,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 33-product:
   id: 33
   sku: ACME-X033
@@ -269,6 +309,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 34-product:
   id: 34
   sku: ACME-X034
@@ -279,6 +321,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 35-product:
   id: 35
   sku: ACME-X035
@@ -289,6 +333,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 36-product:
   id: 36
   sku: ACME-X036
@@ -299,6 +345,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 37-product:
   id: 37
   sku: ACME-X037
@@ -309,6 +357,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 38-product:
   id: 38
   sku: ACME-X038
@@ -319,6 +369,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 39-product:
   id: 39
   sku: ACME-X039
@@ -329,6 +381,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 40-product:
   id: 40
   sku: ACME-X040
@@ -339,6 +393,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 41-product:
   id: 41
   sku: ACME-X041
@@ -349,6 +405,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 42-product:
   id: 42
   sku: ACME-X042
@@ -359,6 +417,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 43-product:
   id: 43
   sku: ACME-X043
@@ -369,6 +429,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 44-product:
   id: 44
   sku: ACME-X044
@@ -379,6 +441,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 45-product:
   id: 45
   sku: ACME-X045
@@ -389,6 +453,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 46-product:
   id: 46
   sku: ACME-X046
@@ -399,6 +465,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 47-product:
   id: 47
   sku: ACME-X047
@@ -409,6 +477,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 48-product:
   id: 48
   sku: ACME-X048
@@ -419,6 +489,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 49-product:
   id: 49
   sku: ACME-X049
@@ -429,6 +501,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 50-product:
   id: 50
   sku: ACME-X050
@@ -439,6 +513,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 51-product:
   id: 51
   sku: ACME-X051
@@ -449,6 +525,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 52-product:
   id: 52
   sku: ACME-X052
@@ -459,6 +537,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 53-product:
   id: 53
   sku: ACME-X053
@@ -469,6 +549,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 54-product:
   id: 54
   sku: ACME-X054
@@ -479,6 +561,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 55-product:
   id: 55
   sku: ACME-X055
@@ -489,6 +573,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 56-product:
   id: 56
   sku: ACME-X056
@@ -499,6 +585,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 57-product:
   id: 57
   sku: ACME-X057
@@ -509,6 +597,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 58-product:
   id: 58
   sku: ACME-X058
@@ -519,6 +609,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 59-product:
   id: 59
   sku: ACME-X059
@@ -529,6 +621,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 60-product:
   id: 60
   sku: ACME-X060
@@ -539,6 +633,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 61-product:
   id: 61
   sku: ACME-X061
@@ -549,6 +645,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 62-product:
   id: 62
   sku: ACME-X062
@@ -559,6 +657,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 63-product:
   id: 63
   sku: ACME-X063
@@ -569,6 +669,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 64-product:
   id: 64
   sku: ACME-X064
@@ -579,6 +681,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 65-product:
   id: 65
   sku: ACME-X065
@@ -589,6 +693,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 66-product:
   id: 66
   sku: ACME-X066
@@ -599,6 +705,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:24 +0200'
 67-product:
   id: 67
   sku: ACME-X067
@@ -609,6 +717,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 68-product:
   id: 68
   sku: ACME-X068
@@ -619,6 +729,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 69-product:
   id: 69
   sku: ACME-X069
@@ -629,6 +741,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 70-product:
   id: 70
   sku: ACME-X070
@@ -639,6 +753,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 71-product:
   id: 71
   sku: ACME-X071
@@ -649,6 +765,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 72-product:
   id: 72
   sku: ACME-X072
@@ -659,6 +777,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 73-product:
   id: 73
   sku: ACME-X073
@@ -669,6 +789,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 74-product:
   id: 74
   sku: ACME-X074
@@ -679,6 +801,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 75-product:
   id: 75
   sku: ACME-X075
@@ -689,6 +813,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 76-product:
   id: 76
   sku: ACME-X076
@@ -699,6 +825,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 77-product:
   id: 77
   sku: ACME-X077
@@ -709,6 +837,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 78-product:
   id: 78
   sku: ACME-X078
@@ -719,6 +849,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 79-product:
   id: 79
   sku: ACME-X079
@@ -729,6 +861,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 80-product:
   id: 80
   sku: ACME-X080
@@ -739,6 +873,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 81-product:
   id: 81
   sku: ACME-X081
@@ -749,6 +885,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 82-product:
   id: 82
   sku: ACME-X082
@@ -759,6 +897,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 83-product:
   id: 83
   sku: ACME-X083
@@ -769,6 +909,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 84-product:
   id: 84
   sku: ACME-X084
@@ -779,6 +921,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 85-product:
   id: 85
   sku: ACME-X085
@@ -789,6 +933,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 86-product:
   id: 86
   sku: ACME-X086
@@ -799,6 +945,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 87-product:
   id: 87
   sku: ACME-X087
@@ -809,6 +957,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 88-product:
   id: 88
   sku: ACME-X088
@@ -819,6 +969,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 89-product:
   id: 89
   sku: ACME-X089
@@ -829,6 +981,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 90-product:
   id: 90
   sku: ACME-X090
@@ -839,6 +993,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 91-product:
   id: 91
   sku: ACME-X091
@@ -849,6 +1005,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 92-product:
   id: 92
   sku: ACME-X092
@@ -859,6 +1017,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 93-product:
   id: 93
   sku: ACME-X093
@@ -869,6 +1029,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 94-product:
   id: 94
   sku: ACME-X094
@@ -879,6 +1041,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 95-product:
   id: 95
   sku: ACME-X095
@@ -889,6 +1053,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 96-product:
   id: 96
   sku: ACME-X096
@@ -899,6 +1065,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 97-product:
   id: 97
   sku: ACME-X097
@@ -909,6 +1077,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 98-product:
   id: 98
   sku: ACME-X098
@@ -919,6 +1089,8 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'
 99-product:
   id: 99
   sku: ACME-X099
@@ -929,3 +1101,5 @@
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-10 15:07:06 +0200'
+  updated_at: '2025-06-10 15:07:25 +0200'

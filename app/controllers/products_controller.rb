@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
   # GET /products
   def index
+    Product.all.first.touch
     @products = Product.all
   end
 

@@ -5,7 +5,6 @@
 class Product
   include ActiveModel::Model
   include ActiveModel::Attributes
-
   ##
   # YAML Persistence. Matches ActiveRecord's API as much as possible
 
@@ -71,6 +70,10 @@ class Product
       product.attributes = changes
       return false unless product.valid?
 
+      # Set created_at if first save
+      product.created_at ||= Time.now
+      # Set updated at on every save
+      product.updated_at = Time.now
       storage_key = storage_key_for_product(product)
       store_instance(read_only: false) do |store|
         store[storage_key] = safe_storage_attributes(product.attributes)
@@ -176,6 +179,10 @@ class Product
 
   attribute :stock, :integer, default: 0
 
+  attribute :created_at, :datetime, default: Time.now
+
+  attribute :updated_at, :datetime, default: Time.now
+
   validates :name, presence: true
 
   SKU_PATTERN = /\w{4}\-\w?\d{3}/i
@@ -195,6 +202,12 @@ class Product
   validates :tax_currency, presence: true, format: ISO_CURRENCY_PATTERN
 
   validates :stock, presence: true, numericality: { greater_than: 0 }
+
+  def inspect
+    keyval_separator = '='
+    attribute_separator = ' '
+    attributes.to_a.map { |(key,val)| [key,val].join(keyval_separator) }.join(attribute_separator)
+  end
 
   def update(new_attributes)
     self.class.save(self, new_attributes.to_hash)
@@ -228,6 +241,16 @@ class Product
     Money.from_amount(tax_amount.to_f, tax_currency)
   end
 
+  def touch
+    empty_changes = {}
+    self.class.save(self, empty_changes)
+  end
+  def average_rating
+    Rails.logger.info("Key cache: #{[id, updated_at, 'average_rating'].join}")
+    Rails.logger.info("Exists? #{Rails.cache.exist?([id, updated_at, 'average_rating'].join)}")
+    # TODO: Use global ID here
+    Rails.cache.fetch([id, updated_at, 'average_rating']) { Rating.where(product_id: id).average(:star_value) }
+  end
   def as_json(*)
     attributes
   end
