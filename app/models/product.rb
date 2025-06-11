@@ -3,8 +3,11 @@
 # Saved in YAML for now, because we can't afford a DB
 #
 class Product
+  require 'globalid'
   include ActiveModel::Model
   include ActiveModel::Attributes
+  include GlobalID::Identification
+
   ##
   # YAML Persistence. Matches ActiveRecord's API as much as possible
 
@@ -221,7 +224,6 @@ class Product
   class Product::RecordInvalid < StandardError
   end
   def save!
-    puts "valid: #{errors.inspect}" unless valid?
     save || raise(RecordInvalid)
   end
 
@@ -245,11 +247,15 @@ class Product
     empty_changes = {}
     self.class.save(self, empty_changes)
   end
+
+  def ratings
+    Rating.for_product(self)
+  end
+
   def average_rating
-    Rails.logger.info("Key cache: #{[id, updated_at, 'average_rating'].join}")
-    Rails.logger.info("Exists? #{Rails.cache.exist?([id, updated_at, 'average_rating'].join)}")
-    # TODO: Use global ID here
-    Rails.cache.fetch([id, updated_at, 'average_rating']) { Rating.where(product_id: id).average(:star_value) }
+    Rails.cache.fetch([to_global_id, updated_at, 'average_rating']) do
+      ratings.average(:star_value)
+    end
   end
   def as_json(*)
     attributes
