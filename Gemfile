@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+ruby file: "./.ruby-version"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.0.2"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
@@ -21,7 +22,7 @@ gem "bootsnap", require: false
 
 gem "money-rails", "~> 1.15"
 
-gem 'bcrypt-ruby'
+gem 'bcrypt'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
