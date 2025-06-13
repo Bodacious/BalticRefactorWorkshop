@@ -1,3 +1,4 @@
+FactoryBot.create_list(:product, 10)
 
 Product.all.each do |product|
   next if product.ratings.any?

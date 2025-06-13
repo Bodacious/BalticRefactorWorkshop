@@ -35,3 +35,4 @@
 .idea
 
 vendor/**/*.sqlite3
+db/*.products.yml
