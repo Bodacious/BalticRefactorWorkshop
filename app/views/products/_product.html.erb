@@ -13,7 +13,7 @@
   </td>
 
   <td>
-    <%= product.average_rating.to_f %>
+    <%= stars_for_score(product.average_rating)  %>
   </td>
   <td>
     <%= product.price.format %>
