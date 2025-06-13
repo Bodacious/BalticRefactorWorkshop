@@ -3,10 +3,8 @@
 # Saved in YAML for now, because we can't afford a DB
 #
 class Product
-  require "globalid"
   include ActiveModel::Model
   include ActiveModel::Attributes
-  include GlobalID::Identification
 
   ##
   # YAML Persistence. Matches ActiveRecord's API as much as possible
@@ -252,8 +250,12 @@ class Product
     Rating.for_product(self)
   end
 
+  def cache_key
+    "products/#{id.to_i}"
+  end
+
   def average_rating
-    Rails.cache.fetch([ to_global_id, updated_at, "average_rating" ]) do
+    Rails.cache.fetch([ cache_key, updated_at, "average_rating" ]) do
       ratings.average(:star_value)
     end
   end
