@@ -1,7 +1,21 @@
+
+class ProductRepository
+  class << self
+    def all = Product.all
+    def find(...) = Product.find(...)
+    def where(...) = Product.where(...)
+    def count = Product.count
+    def destroy!(...) = Product.destroy!(...)
+
+    def create(product) = product.save
+  end
+end
+
+
 class ProductsController < ApplicationController
   # GET /products
   def index
-    @products = Product.all
+    @products = product_repository.all
   end
 
   # GET /products/new
@@ -12,7 +26,8 @@ class ProductsController < ApplicationController
   # POST /products or /products.json
   def create
     @product = Product.new(product_params)
-    if @product.save
+    if @product.valid?
+      product_repository.create @product
       redirect_to products_url,
                   notice: "Product was successfully created.",
                   status: :see_other
@@ -22,12 +37,12 @@ class ProductsController < ApplicationController
   end
 
   def edit
-    @product = Product.find(params[:id])
+    @product = product_repository.find(params[:id])
   end
 
   # PATCH/PUT /products/1
   def update
-    @product = Product.find(params.expect(:id))
+    @product = product_repository.find(params.expect(:id))
     if @product.update(product_params)
       redirect_to products_url, notice: "Product was successfully updated.",
                   status: :see_other
@@ -38,12 +53,16 @@ class ProductsController < ApplicationController
 
   # DELETE /products/1
   def destroy
-    @product = Product.find(params.expect(:id))
-    @product.destroy!
+    @product = product_repository.find(params.expect(:id))
+    product_repository.destroy!(@product)
     redirect_to products_url, notice: "Product was successfully destroyed."
   end
 
   private
+
+  def product_repository
+    ProductRepository
+  end
 
   # Only allow a list of trusted parameters through.
   def product_params
