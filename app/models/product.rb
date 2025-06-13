@@ -272,7 +272,9 @@ class Product
 
   TAX_RATE = Rational(20, 100)  # 20 %
   def set_tax_from_price
-    self.tax_amount = BigDecimal(price_amount.to_f) * TAX_RATE
+    raise "Cannot set tax from price" unless price_amount.present? && price_currency.present?
+
+    self.tax_amount = price_amount * TAX_RATE
     self.tax_currency = price_currency
   end
 end

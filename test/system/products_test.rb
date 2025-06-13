@@ -19,8 +19,6 @@ class ProductsTest < ApplicationSystemTestCase
     fill_in "Description", with: "A new test product"
     fill_in "Price amount", with: "19.99"
     fill_in "Price currency", with: "USD"
-    fill_in "Tax amount", with: "2.99"
-    fill_in "Tax currency", with: "USD"
     fill_in "Stock", with: "5"
 
     click_on "Create Product"

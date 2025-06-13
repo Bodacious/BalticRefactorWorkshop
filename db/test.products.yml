@@ -106,11 +106,11 @@
   description: Description for product 2
   price_amount: 9.99
   price_currency: USD
-  tax_amount: 1.99
+  tax_amount: 2.0
   tax_currency: USD
   stock: 10
-  created_at: '2025-06-13 10:32:22 +0300'
-  updated_at: '2025-06-13 10:32:24 +0300'
+  created_at: '2025-06-13 12:30:13 +0300'
+  updated_at: '2025-06-13 12:30:15 +0300'
 16-product:
   id: 16
   sku: TEST-X123
@@ -128,11 +128,11 @@
   description: Description for product 3
   price_amount: 9.99
   price_currency: USD
-  tax_amount: 1.99
+  tax_amount: 2.0
   tax_currency: USD
   stock: 10
-  created_at: '2025-06-13 10:32:22 +0300'
-  updated_at: '2025-06-13 10:32:24 +0300'
+  created_at: '2025-06-13 12:30:13 +0300'
+  updated_at: '2025-06-13 12:30:15 +0300'
 17-product:
   id: 17
   sku: TEST-X123
@@ -153,30 +153,18 @@
   tax_amount: 2.99
   tax_currency: USD
   stock: 5
-5-product:
-  id: 5
-  sku: EDIT-X123
-  name: Updated Name
-  description: Description for product 5
-  price_amount: 9.99
-  price_currency: USD
-  tax_amount: 1.99
-  tax_currency: USD
-  stock: 10
-  created_at: '2025-06-13 10:32:22 +0300'
-  updated_at: '2025-06-13 10:32:25 +0300'
 1-product:
   id: 1
-  sku: BADX-X123
-  name: Initial Name
+  sku: EDIT-X123
+  name: Updated Name
   description: Description for product 1
   price_amount: 9.99
   price_currency: USD
-  tax_amount: 1.99
+  tax_amount: 2.0
   tax_currency: USD
   stock: 10
-  created_at: '2025-06-13 10:32:22 +0300'
-  updated_at: '2025-06-13 10:32:25 +0300'
+  created_at: '2025-06-13 12:30:13 +0300'
+  updated_at: '2025-06-13 12:30:14 +0300'
 19-product:
   id: 19
   sku: TEST-X123
@@ -189,3 +177,27 @@
   stock: 5
   created_at: '2025-06-13 10:32:22 +0300'
   updated_at: '2025-06-13 10:32:24 +0300'
+4-product:
+  id: 4
+  sku: BADX-X123
+  name: Initial Name
+  description: Description for product 4
+  price_amount: 9.99
+  price_currency: USD
+  tax_amount: 2.0
+  tax_currency: USD
+  stock: 10
+  created_at: '2025-06-13 12:30:13 +0300'
+  updated_at: '2025-06-13 12:30:15 +0300'
+20-product:
+  id: 20
+  sku: TEST-X123
+  name: Test Product
+  description: A new test product
+  price_amount: 19.99
+  price_currency: USD
+  tax_amount: 4.0
+  tax_currency: USD
+  stock: 5
+  created_at: '2025-06-13 12:30:13 +0300'
+  updated_at: '2025-06-13 12:30:15 +0300'
