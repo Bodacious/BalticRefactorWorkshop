@@ -79,16 +79,6 @@
   tax_amount: 2.99
   tax_currency: USD
   stock: 5
-4-product:
-  id: 4
-  sku: ACME-X003
-  name: Widget B
-  description: Description for product 4
-  price_amount: 9.99
-  price_currency: USD
-  tax_amount: 1.99
-  tax_currency: USD
-  stock: 10
 14-product:
   id: 14
   sku: TEST-X123
@@ -111,14 +101,16 @@
   stock: 5
 2-product:
   id: 2
-  sku: EDIT-X123
-  name: Updated Name
+  sku: ACME-X001
+  name: Widget A
   description: Description for product 2
   price_amount: 9.99
   price_currency: USD
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-13 10:32:22 +0300'
+  updated_at: '2025-06-13 10:32:24 +0300'
 16-product:
   id: 16
   sku: TEST-X123
@@ -132,13 +124,15 @@
 3-product:
   id: 3
   sku: ACME-X002
-  name: Widget A
+  name: Widget B
   description: Description for product 3
   price_amount: 9.99
   price_currency: USD
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-13 10:32:22 +0300'
+  updated_at: '2025-06-13 10:32:24 +0300'
 17-product:
   id: 17
   sku: TEST-X123
@@ -161,11 +155,37 @@
   stock: 5
 5-product:
   id: 5
-  sku: BADX-X123
-  name: Initial Name
+  sku: EDIT-X123
+  name: Updated Name
   description: Description for product 5
   price_amount: 9.99
   price_currency: USD
   tax_amount: 1.99
   tax_currency: USD
   stock: 10
+  created_at: '2025-06-13 10:32:22 +0300'
+  updated_at: '2025-06-13 10:32:25 +0300'
+1-product:
+  id: 1
+  sku: BADX-X123
+  name: Initial Name
+  description: Description for product 1
+  price_amount: 9.99
+  price_currency: USD
+  tax_amount: 1.99
+  tax_currency: USD
+  stock: 10
+  created_at: '2025-06-13 10:32:22 +0300'
+  updated_at: '2025-06-13 10:32:25 +0300'
+19-product:
+  id: 19
+  sku: TEST-X123
+  name: Test Product
+  description: A new test product
+  price_amount: 19.99
+  price_currency: USD
+  tax_amount: 2.99
+  tax_currency: USD
+  stock: 5
+  created_at: '2025-06-13 10:32:22 +0300'
+  updated_at: '2025-06-13 10:32:24 +0300'

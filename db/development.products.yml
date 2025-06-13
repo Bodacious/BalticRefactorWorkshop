@@ -106,7 +106,7 @@
   tax_currency: USD
   stock: 10
   created_at: '2025-06-10 15:07:06 +0200'
-  updated_at: '2025-06-10 15:20:52 +0200'
+  updated_at: '2025-06-13 10:32:05 +0300'
 17-product:
   id: 17
   sku: ACME-X117
