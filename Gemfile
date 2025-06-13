@@ -44,8 +44,14 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+
+  gem "factory_bot_rails", "~> 6.4"
+
+  gem "mocha", "~> 2.7"
 end
 
-gem "factory_bot_rails", "~> 6.4"
-
-gem "mocha", "~> 2.7"
+group :third_party_service do
+  gem "sinatra", "~> 4.1"
+  gem "sinatra-contrib", require: [ "sinatra/base", "sinatra/json", "sinatra/namespace" ]
+  gem "json"
+end
