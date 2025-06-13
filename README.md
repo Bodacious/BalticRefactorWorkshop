@@ -1,24 +1,48 @@
-# README
+# Baltic Ruby Refactoring workshop
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Repository for a workshop that demonstrates parallel refactoring principles using Ruby on Rails.
 
-Things you may want to cover:
+[![CI](https://github.com/Bodacious/BalticRefactorWorkshop/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Bodacious/BalticRefactorWorkshop/actions/workflows/ci.yml)
 
-* Ruby version
+## 📥 Downloading
 
-* System dependencies
+To clone the repository:
 
-* Configuration
+```bash
+git clone https://github.com/bodacious/BalticRefactorWorkshop.git
+cd BalticRefactorWorkshop
+```
 
-* Database creation
+## ⚙️ Setup
 
-* Database initialization
+Install dependencies and prepare the environment:
 
-* How to run the test suite
+```bash
+bin/setup
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## 🧪 Running the Test Suite
 
-* Deployment instructions
+To execute the full test suite (only system tests for now):
 
-* ...
+```bash
+bundle exec rails test:system
+```
+
+## 🚀 Running the Main Application Server
+
+To start the Rails server with development tools:
+
+```bash
+bin/dev
+```
+
+## 🔌 Running the Third-Party Service
+
+A third-party mock service is included and can be started separately on port 9292:
+
+(We'll provide context for this in the workhshop)
+
+```bash
+bin/third-party-service
+```
