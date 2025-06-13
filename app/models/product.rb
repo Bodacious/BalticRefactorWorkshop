@@ -5,7 +5,7 @@
 class Product
   include ActiveModel::Model
   include ActiveModel::Attributes
-
+  include ActiveModel::Dirty
   ##
   # YAML Persistence. Matches ActiveRecord's API as much as possible
 
@@ -214,7 +214,12 @@ class Product
     self.class.save(self, new_attributes.to_hash)
   end
 
+  def price_changed?
+    price_amount_changed? || price_currency_changed?
+  end
+
   def save
+    set_tax_from_price if price_changed?
     self.class.save(self, attributes)
   end
 
@@ -261,5 +266,13 @@ class Product
   end
   def as_json(*)
     attributes
+  end
+
+  private
+
+  TAX_RATE = Rational(20, 100)  # 20 %
+  def set_tax_from_price
+    self.tax_amount = BigDecimal(price_amount.to_f) * TAX_RATE
+    self.tax_currency = price_currency
   end
 end
