@@ -22,7 +22,7 @@ gem "bootsnap", require: false
 
 gem "money-rails", "~> 1.15"
 
-gem 'bcrypt'
+gem "bcrypt"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -36,7 +36,6 @@ group :development, :test do
 
   gem "factory_bot_rails", "~> 6.4"
   gem "faker", "~> 3.5"
-
 end
 
 group :development do

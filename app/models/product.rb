@@ -3,7 +3,7 @@
 # Saved in YAML for now, because we can't afford a DB
 #
 class Product
-  require 'globalid'
+  require "globalid"
   include ActiveModel::Model
   include ActiveModel::Attributes
   include GlobalID::Identification
@@ -207,9 +207,9 @@ class Product
   validates :stock, presence: true, numericality: { greater_than: 0 }
 
   def inspect
-    keyval_separator = '='
-    attribute_separator = ' '
-    attributes.to_a.map { |(key,val)| [key,val].join(keyval_separator) }.join(attribute_separator)
+    keyval_separator = "="
+    attribute_separator = " "
+    attributes.to_a.map { |(key, val)| [ key, val ].join(keyval_separator) }.join(attribute_separator)
   end
 
   def update(new_attributes)
@@ -253,7 +253,7 @@ class Product
   end
 
   def average_rating
-    Rails.cache.fetch([to_global_id, updated_at, 'average_rating']) do
+    Rails.cache.fetch([ to_global_id, updated_at, "average_rating" ]) do
       ratings.average(:star_value)
     end
   end
