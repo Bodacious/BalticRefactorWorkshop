@@ -34,4 +34,4 @@
 /config/master.key
 .idea
 
-*.sqlite3
+vendor/**/*.sqlite3
