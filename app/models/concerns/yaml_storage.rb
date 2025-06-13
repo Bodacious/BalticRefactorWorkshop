@@ -116,5 +116,4 @@ module YamlStorage
     product.id = generate_new_id_for_product! unless product.persisted?
     "#{product.id}-product"
   end
-
 end

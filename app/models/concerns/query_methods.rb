@@ -5,15 +5,6 @@ module QueryMethods
     load_all
   end
 
-  # The maximum value of the given attribute name in the dataset
-  # @param [String, Symbol] attribute_name Name of the attribute to return max value for
-  # @return [String,Integer,Float]
-  def max(attribute_name)
-    load_all.select { |record| record.public_send(attribute_name).present? }
-            .map(&:"#{attribute_name}")
-            .max
-  end
-
   # You tried to fetch a record that doesn't exist
   class Product::RecordNotFound < StandardError
   end
@@ -25,8 +16,6 @@ module QueryMethods
     where("id" => id.to_i).first || raise(RecordNotFound, "Cannot find product with id=#{id}")
   end
 
-
-
   # @param [Hash] filters The SQL filters to apply to this query.
   # @return [Array<Product>]
   def where(filters = {})
@@ -36,10 +25,7 @@ module QueryMethods
     end
   end
 
-
-
   def count
     all.size
   end
-
 end
