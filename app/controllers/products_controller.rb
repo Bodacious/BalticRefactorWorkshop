@@ -1,17 +1,3 @@
-
-class ProductRepository
-  class << self
-    def all = Product.all
-    def find(...) = Product.find(...)
-    def where(...) = Product.where(...)
-    def count = Product.count
-    def destroy!(...) = Product.destroy!(...)
-
-    def create(product) = product.save
-  end
-end
-
-
 class ProductsController < ApplicationController
   # GET /products
   def index
@@ -61,7 +47,11 @@ class ProductsController < ApplicationController
   private
 
   def product_repository
-    ProductRepository
+    if true
+      ProductRepositoryFactory.new(:yaml)
+    else
+      ProductRepositoryFactory.new(:json)
+    end
   end
 
   # Only allow a list of trusted parameters through.
