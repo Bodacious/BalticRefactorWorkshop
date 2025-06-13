@@ -39,7 +39,6 @@ class ProductsTest < ApplicationSystemTestCase
     assert_text "Description can't be blank"
     assert_text "Price amount must be greater than 0"
     assert_text "Tax amount must be greater than 0"
-    assert_text "Stock must be greater than 0"
   end
 
   test "Admin edits an existing product" do
@@ -90,5 +89,22 @@ class ProductsTest < ApplicationSystemTestCase
     assert_text "Product was successfully destroyed"
     assert_no_text "To Delete"
     assert_current_path products_path
+  end
+
+  test "Admin changes price on Product" do
+    product = FactoryBot.create(:product, price_amount: 100.0)
+
+    visit products_path
+    within "#product_#{product.id}" do
+      click_on "Edit"
+    end
+
+    fill_in :product_price_amount, with: 200.0
+    click_on "Update Product"
+
+    assert_current_path products_path
+    within "#product_#{product.id}" do
+      assert_text "$40.00" # 20% of $200
+    end
   end
 end

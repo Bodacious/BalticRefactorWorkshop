@@ -202,7 +202,7 @@ class Product
 
   validates :tax_currency, presence: true, format: ISO_CURRENCY_PATTERN
 
-  validates :stock, presence: true, numericality: { greater_than: 0 }
+  validates :stock, presence: true, numericality: { greater_than_or_equal: 0 }
 
   def inspect
     keyval_separator = "="
@@ -219,7 +219,6 @@ class Product
   end
 
   def save
-    set_tax_from_price if price_changed?
     self.class.save(self, attributes)
   end
 
@@ -227,7 +226,7 @@ class Product
   class Product::RecordInvalid < StandardError
   end
   def save!
-    save || raise(RecordInvalid)
+    save || raise(RecordInvalid, "#{errors.to_a.to_sentence}")
   end
 
   def destroy!
@@ -238,6 +237,11 @@ class Product
     id.present?
   end
 
+  def valid?
+    # Make sure we set the tax before running validations
+    set_tax_from_price
+    super
+  end
   def price
     Money.from_amount(price_amount.to_f, price_currency)
   end
